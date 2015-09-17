@@ -2,9 +2,9 @@ SHELL = /bin/sh
 CC    = gcc
 CFLAGS       = -fPIC -Wall -Werror -shared  
 
-TARGET1  = libmfs.so
-SOURCES1 = mfs.c udp.c
-HEADERS = mfs.h
+TARGET1  = librudp.so
+SOURCES1 = rudp.c udp.c
+HEADERS = rudp.h
 OBJECTS1 = $(SOURCES1:.c=.o)
 
 TARGET2  = server
